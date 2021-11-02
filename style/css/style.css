@@ -377,7 +377,7 @@ select {
   }
 }
 .arrow {
-  margin: 1.125rem auto 0;
+  margin: 5.8125rem auto 0;
   animation: bounce 1.5s 0s 3;
   cursor: pointer;
 }
@@ -414,7 +414,8 @@ select {
   background-position: center;
   background-size: cover;
 }
-.announcement .n1:hover::before, .announcement .n2:hover::before {
+.announcement .n1:hover::before,
+.announcement .n2:hover::before {
   opacity: 1;
 }
 .announcement .n1:before {
@@ -444,7 +445,7 @@ select {
 }
 .announcement__learn-more .learn-more__title {
   font-size: clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem);
-  letter-spacing: 0, 29;
+  letter-spacing: -0.018125rem;
   color: #24303E;
   font-family: "Fraunces", serif;
   text-align: center;
@@ -485,9 +486,10 @@ select {
   line-height: 1.875rem;
   letter-spacing: -0.008125rem;
   text-align: center;
-  margin: clamp(1.25rem, 1.096rem + 0.6573vw, 1.6875rem) 0 clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem);
+  margin: clamp(1.25rem, 1.096rem + 0.6573vw, 1.6875rem) 0 clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem) 0;
   font-weight: 600;
   color: #808397;
+  max-width: 28.125rem;
 }
 .announcement__photos {
   height: 37.5rem;
@@ -536,6 +538,28 @@ select {
 @media (min-width: 375px) {
   .announcement .grass {
     background-image: url(/images/desktop/image-stand-out.jpg);
+  }
+}
+
+.announcement__paragraph {
+  align-self: center;
+}
+@media (min-width: 768px) {
+  .announcement__paragraph {
+    text-align: left;
+    margin: clamp(1.25rem, 1.096rem + 0.6573vw, 1.6875rem) auto clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem) 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .learn-more__title {
+    text-align: left !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .learn-more__button {
+    align-self: flex-start !important;
   }
 }
 

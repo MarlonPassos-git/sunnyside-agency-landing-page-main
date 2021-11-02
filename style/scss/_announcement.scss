@@ -35,15 +35,16 @@
 
     }
 
-    .n1:hover::before, .n2:hover::before  {
+    .n1:hover::before,
+    .n2:hover::before {
         opacity: 1;
-        
+
     }
 
-    .n1:before  {
+    .n1:before {
         background-color: #FAD400;
 
-        
+
     }
 
     .n2:before {
@@ -58,8 +59,9 @@
         justify-content: center;
         flex-direction: column;
 
+
         @media (min-width: 768px) {
-            height: flex(312, 600)
+            height: flex(312, 600);
         }
 
 
@@ -67,23 +69,23 @@
             padding: 0 flex(24, 110) 0 flex(24, 165);
             grid-column: 1 / 2;
             grid-row: 1 / 2;
-            
- 
+
+
         }
 
 
 
-        
+
 
         &:nth-child(4) {
             padding: 0 flex(24, 165) 0 flex(24, 110);
-            
-            
+
+
         }
 
         .learn-more__title {
             font-size: flex(32, 40);
-            letter-spacing: -0, 29;
+            letter-spacing: rem(-0.29);
             color: $c__ebony-clay;
             font-family: 'Fraunces', serif;
             text-align: center;
@@ -119,10 +121,9 @@
                 top: 26px;
                 z-index: -1;
                 display: block
-
             }
 
-            
+
         }
 
 
@@ -135,9 +136,10 @@
         line-height: rem(30);
         letter-spacing: rem(-0.13);
         text-align: center;
-        margin: flex(20, 27) 0 flex(32, 40);
+        margin: flex(20, 27) 0 flex(32, 40) 0;
         font-weight: 600;
         color: $c__waterloo-;
+        max-width: rem(450)
     }
 
     &__photos {
@@ -161,7 +163,7 @@
             font-size: rem(28);
             letter-spacing: rem(-0.2);
             font-weight: 900;
-            font-family: 'Fraunces', serif; 
+            font-family: 'Fraunces', serif;
             color: $c__blumine;
             margin-bottom: rem(26);
 
@@ -175,6 +177,8 @@
             max-width: rem(339);
             text-align: center;
             font-weight: 600;
+
+
         }
     }
 
@@ -195,3 +199,27 @@
         }
     }
 }
+
+.announcement__paragraph  {
+    align-self: center;
+
+    @media (min-width: $tabletWidth) {
+        text-align: left;
+        margin: flex(20, 27) auto flex(32, 40) 0;
+    }
+}
+
+.learn-more__title {
+    @media (min-width: $tabletWidth) {
+        text-align: left !important;
+    }
+
+}
+
+.learn-more__button {
+    @media (min-width: $tabletWidth) {
+        align-self: flex-start !important;
+    }
+    
+}
+

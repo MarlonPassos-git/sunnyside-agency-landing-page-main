@@ -29,8 +29,8 @@
 <br>
 <h2 id="links">🔗 Links</h2>
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/-making-a-healthy-website-with-html-sass-and-js-VrgJO9-Zp](https://www.frontendmentor.io/solutions/-making-a-healthy-website-with-html-sass-and-js-VrgJO9-Zp)
+- Live Site URL: [https://sunnyside-agency-landing-page-main-lyart.vercel.app/](https://sunnyside-agency-landing-page-main-lyart.vercel.app/)
 
 <br>
 <h2 id="built_with">👷‍♂️ Built with</h2>
