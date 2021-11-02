@@ -1,0 +1,77 @@
+.testimonials {
+
+    &__title {
+        font-weight: 900;
+        font-size: flex(16, 20);
+        letter-spacing: flex(4, 5);
+        text-align: center;
+        font-family: 'Fraunces', serif;
+        color: $c__gray-chateau;
+        margin: flex(64, 160) 0 flex(63, 80);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(64) rem(30);
+
+        @media (min-width: 1100px) {
+            flex-direction: row;
+            justify-content: center;
+            padding: 0 rem(24);
+        }
+    }
+
+
+}
+
+.testimonials-list__testimony {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--img {
+        height: rem(72);
+        width: rem(72);
+        border-radius: 50%;
+    }
+
+    &--blockquote {
+        font-weight: 600;
+        font-size: rem(18);
+        line-height: rem(32);
+        letter-spacing: rem(-0.13);
+        max-width: flex(327, 350);
+        min-width: rem(327);
+        text-align: center;
+        font-family: Barlow;
+        margin: flex(32, 58) 0 flex(32, 69);
+        color: $c__gray-chateau;
+
+    }
+
+    &--name {
+        font-family: 'Fraunces', serif;
+        ;
+        font-weight: 900;
+        font-size: rem(18);
+        line-height: rem(23);
+        text-align: center;
+        letter-spacing: rem(-0.128571);
+        color: $c__ebony-clay;
+
+
+    }
+
+    &--role {
+        font-family: Barlow;
+        font-style: normal;
+        font-weight: 600;
+        font-size: rem(14);
+        line-height: rem(25);
+        letter-spacing: rem(-0.1);
+        color: $c__gray-chateau;
+        margin-top: rem(8);
+    }
+}

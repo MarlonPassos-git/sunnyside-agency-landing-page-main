@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Sunnyside agency landing page solution frontend mento">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Sunnyside agency landing page challenge hub</title>
+  <link rel="stylesheet" type="text/css" href="style/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4b02b79251.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <header class="site-head header" role="banner">
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <div class="wrapper">
+      <div class="site-head__inner">
+        <a href="/" aria-label="sunnyside home" class="site-head__brand">
+          <img class="logo" src="images/logo.svg" alt="header logo" /> <!-- logo website -->
+        </a>
+        <burger-menu max-width="550">
+          <nav class="navigation" aria-label="primary">
+            <ul role="list">
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#"> Services</a>
+              </li>
+              <li>
+                <a href="#">Projects</a>
+              </li>
+              <li class="contact">
+                CONTACT
+              </li>
+            </ul>
+          </nav>
+        </burger-menu>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1" class="">
+
+    <section class="introduction">
+      <h1 class="introduction__title">We are creatives </h1>
+
+      <a aria-label="click to go main" href="#announcement">
+        <img class="arrow" alt="" src="https://sunnyside-sr.netlify.app/images/icon-arrow-down.svg">
+      </a>
+    </section>
+
+    <section id="announcement" class="announcement">
+      <div class="announcement__img egg"></div>
+      <div class="announcement__learn-more">
+        <h2 class="learn-more__title">Transform your brand</h2>
+        <p class="announcement__paragraph">
+          We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through
+          compelling visuals that do most of the marketing for you.
+        </p>
+        <a href="#" class="learn-more__button n1">
+          LEARN MORE
+        </a>
+      </div>
+      <div class="announcement__img grass"></div>
+      <div class="announcement__learn-more">
+        <h2 class="learn-more__title">Stand out to the right audience</h2>
+        <p class="announcement__paragraph">
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
+          build and extend your brand in digital places.
+        </p>
+        <a href="#" class="learn-more__button n2">
+          LEARN MORE
+        </a>
+      </div>
+      <div class="announcement__photos">
+        <h2 class="announcement__photos--title">Graphic Design</h2>
+        <p class="announcement__photos--paragraph">Great design makes you memorable. We deliver artwork that underscores
+          your brand message and captures
+          potential clients’ attention.</p>
+      </div>
+      <div class="announcement__photos">
+        <h2 class="announcement__photos--title">Photography</h2>
+        <p class="announcement__photos--paragraph">Increase your credibility by getting the most stunning, high-quality
+          photos that improve your business image.
+        </p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2 class="testimonials__title">CLIENT TESTIMONIALS</h2>
+      <ul class="testimonials__list">
+        <li class="testimonials-list__testimony">
+          <img src="images/image-emily.jpg" alt="emily" class="testimonials-list__testimony--img">
+          <blockquote class="testimonials-list__testimony--blockquote">
+            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
+            hit.
+          </blockquote>
+          <p class="testimonials-list__testimony--name">
+            Emily R.
+          </p>
+          <p class="testimonials-list__testimony--role">
+            Marketing Director
+          </p>
+        </li>
+        <li class="testimonials-list__testimony">
+          <img src="images/image-thomas.jpg" alt="thomas" class="testimonials-list__testimony--img">
+          <blockquote class="testimonials-list__testimony--blockquote">
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+            enjoyable experience.
+          </blockquote>
+          <p class="testimonials-list__testimony--name">
+            Thomas S.
+          </p>
+          <p class="testimonials-list__testimony--role">
+            Chief Operating Officer
+          </p>
+        </li>
+        <li class="testimonials-list__testimony">
+          <img src="images/image-jennie.jpg" alt="jennie" class="testimonials-list__testimony--img">
+          <blockquote class="testimonials-list__testimony--blockquote">
+            Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          </blockquote>
+          <p class="testimonials-list__testimony--name">
+            Jennie F.
+          </p>
+          <p class="testimonials-list__testimony--role">
+            Busin ess Owner
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery__img"></div>
+      <div class="gallery__img"></div>
+      <div class="gallery__img"></div>
+      <div class="gallery__img"></div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <img src="images/logo.svg" alt="logo sunnyside" class="footer__logo logo">
+    <nav>
+      <ul class="footer__navigation">
+        <li>
+          <a href="#" class="footer__navigation--item">
+            <p>About</p>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="footer__navigation--item">
+            <p>Services</p>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="footer__navigation--item">
+            <p>Projects</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="footer__social-networks">
+      <li class="footer__social-networks--social-network">
+        <i class="fab fa-facebook-square"></i>
+      </li>
+      <li class="footer__social-networks--social-network">
+        <i class="fab fa-instagram"></i>
+      </li>
+      <li class="footer__social-networks--social-network">
+        <i class="fab fa-twitter"></i>
+      </li>
+      <li class="footer__social-networks--social-network">
+        <i class="fab fa-pinterest"></i>
+      </li>
+    </ul>
+    </img>
+  </footer>
+
+
+  <script src="script/burger-menu.js" type="module" defer></script>
+</body>
+
+</html>

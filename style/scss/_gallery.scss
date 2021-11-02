@@ -1,0 +1,49 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: flex(86, 160);
+
+
+    
+
+    &__img {
+        width: 50%;
+        height: flex(188, 447);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+
+        @media (min-width: 768px) {
+            width: 25%;
+        }
+
+        &:nth-child(1) {
+            background-image: url(/images/mobile/image-gallery-milkbottles.jpg);
+
+            @media (min-width: $mobileWidth) {
+                background-image: url(/images/desktop/image-gallery-milkbottles.jpg)
+            }
+        }
+        &:nth-child(2) {
+            background-image: url(/images/mobile/image-gallery-orange.jpg);
+
+            @media (min-width: $mobileWidth) {
+                background-image: url(/images/desktop/image-gallery-orange.jpg)
+            }
+        }&:nth-child(3) {
+            background-image: url(/images/mobile/image-gallery-cone.jpg);
+
+            @media (min-width: $mobileWidth) {
+                background-image: url(/images/desktop/image-gallery-cone.jpg)
+            }
+        }&:nth-child(4) {
+            background-image: url(/images/mobile/image-gallery-sugar-cubes.jpg);
+
+            @media (min-width: $mobileWidth) {
+                background-image: url(/images/desktop/image-gallery-sugarcubes.jpg)
+            }
+        }
+    }
+
+    
+}

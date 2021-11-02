@@ -1,0 +1,69 @@
+.header {
+    background-color: $c__blue-header;
+    height: flex(88, 108);
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    div {
+        height: auto;
+    }
+
+}
+
+.logo {
+    height: flex(24, 40);
+    width: flex(123, 170);
+}
+
+.wrapper {
+    width: 100%;
+    padding: 0 flex(24, 48)
+}
+
+.site-head__inner {
+    align-items: center;
+    display: flex;
+    justify-content: space-between
+}
+
+.contact {
+    height: 56px !important;
+    width: 140px !important;
+    border-radius: 28px;
+    background-color: $c__white;
+    color: #24303E;
+    font-family: Barlow;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5625rem;
+    letter-spacing: -0.13px;
+    
+    display: grid;
+    place-items: center;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: #FFFFFF25;
+        color: #FFF
+    }
+
+    
+}
+
+.burger-menu[enabled=true] .navigation .contact {
+    background-color: #fbd600;
+    color: #24303e;
+    font-family: 'Fraunces', serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5625rem;
+    letter-spacing: -0.13px;
+
+    &:hover {
+        background-color: #fbd60050;
+    }
+}

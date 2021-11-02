@@ -1,0 +1,68 @@
+// Functions 
+@function rem($pixels, $contexto: 16) {
+    @return ($pixels / $contexto) * 1rem;
+}
+
+@function flex($minSize, $maxSize, $mobileWidth: 375,
+    $decktopWidth: 1440, $rem: 16) {
+
+    $a: $mobileWidth / $rem;
+    $b: $decktopWidth / $rem;
+    $c: $minSize / $rem;
+    $d: $maxSize / $rem;
+    $e: ($d - $c) / ($b - $a);
+    $f: $a * - $e + $c;
+    $g: round($f * 10000) / 10000;
+    $h: round($e * 1000000) / 10000 * 1vw;
+
+    @return clamp(#{$c * 1rem}, #{$g * 1rem} + #{$h}, #{$d * 1rem})
+}
+
+@function flexMax($minSize, $maxSize, $mobileWidth: 375,
+    $decktopWidth: 1440, $rem: 16) {
+
+    $a: $mobileWidth / $rem;
+    $b: $decktopWidth / $rem;
+    $c: $minSize / $rem;
+    $d: $maxSize / $rem;
+    $e: ($d - $c) / ($b - $a);
+    $f: $a * - $e + $c;
+    $g: round($f * 10000) / 10000;
+    $h: round($e * 1000000) / 10000 * 1vw;
+
+    @return calc(#{$g * 1rem} + #{$h})
+}
+
+// Colors 
+$c__blue-header: #3DBEFF;
+$c__bridal-heath: #FFFCF8;
+$c__white: #FFFFFF;
+$c__ebony-clay: #24303E;
+$c__black: #000000;
+$c__paradiso: #2C7566;
+$c__gray-chateau: #A7AAAD;
+$c__shuttle-gray: #5B636D;
+$c__blumine: #19536C;
+$c__plantation: #24554A;
+$c__picton-blue: #39B5E4; 
+$c__viridian: #458D7E;
+$c__waterloo-: #808397;
+$c__mercury: #E3E3E3;
+$c__blumine: #1A526C;
+$c__monte-carlo: #90D4C6;
+$c__dusty-gray: #979797;
+$c__silver: #C1C1C1;
+$c__alto: #CECECE;
+$c__mercury: #E7E7E7;
+$c__seashell: #F1F1F1;
+$c__wild-sand: #F4F4F4;
+$c__gold: #FAD400;
+$c__bittersweet: #FE7766;
+$c__bridal-heath: #FFFCF8;
+
+// widths
+
+$decktopWidth: 1440px;
+$mobileWidth: 375px;
+$tabletWidth: 768px;
+
